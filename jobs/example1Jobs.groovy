@@ -28,3 +28,12 @@ job("$basePath/grails-example-deploy") {
         shell 'scp war file; restart...'
     }
 }
+
+job("$basePath/joao-fejao") {
+    parameters {
+        stringParam 'host'
+    }
+    steps {
+        shell 'scp war file; restart... $host'
+    }
+}
