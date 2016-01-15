@@ -34,6 +34,6 @@ job("$basePath/joao-fejao") {
         stringParam 'host'
     }
     steps {
-        shell 'scp war file; restart... $host'
+        shell 'scp war file; restart... $BUILD_NUMBER $host'
     }
 }
