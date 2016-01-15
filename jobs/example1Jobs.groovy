@@ -10,7 +10,7 @@ job("$basePath/grails-example-build") {
         github repo
     }
     triggers {
-        scm 'H/5 * * * *'
+        scm 'H/10 * * * *'
     }
     steps {
         grails {
